@@ -8,7 +8,7 @@ import {
   FaExclamationCircle,
   FaAngleRight,
 } from "react-icons/fa";
-import Button from "./button";
+import Button from "./Button";
 import Card from "./Card";
 function Footer() {
   return (

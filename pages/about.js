@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../components/button";
+import Button from "../components/Button";
 import Card from "../components/Card";
 import Hero from "../components/Hero";
 import Swiper, { Navigation, Pagination } from "swiper";

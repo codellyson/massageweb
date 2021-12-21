@@ -6,7 +6,7 @@ import SplitImage from "../public/images/2.webp";
 import Split2Image from "../public/images/4.webp";
 import { FaArrowRight } from "react-icons/fa";
 import Image from "next/image";
-import Button from "../components/button";
+import Button from "../components/Button";
 import founderImage from "../public/images/5.webp";
 import Head from "next/head";
 function services() {
