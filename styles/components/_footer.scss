@@ -1,0 +1,86 @@
+.footer {
+  width: auto;
+  background-color: $dark;
+  color: $white;
+  font-family: $font-family;
+  .footer-main-content {
+    @media (min-width: 78rem) {
+      justify-content: space-between;
+      padding: 2rem 0;
+    }
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    .card {
+      padding: 1rem;
+      font-family: $font-family;
+      background: transparent;
+      border: none;
+      .card-title {
+        padding: 1rem 0;
+        font-size: $x-small-font-size;
+        text-transform: uppercase;
+        font-weight: $font-weight-300;
+      }
+    }
+
+    .footer-menu {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-left: -2.5rem;
+      .footer-menu-item {
+        display: flex;
+        gap: 1rem;
+      }
+      .footer-menu-item-link {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        text-decoration: none;
+        color: $white;
+        span {
+          display: inline-block;
+        }
+      }
+    }
+  }
+  .footer-footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 0;
+    flex-wrap: wrap;
+    background-color: #7a7a7a;
+    @media (min-width: 78rem) {
+      font-size: $x-small-font-size;
+      padding: 1rem 0;
+      justify-content: space-between;
+      .right {
+        margin-left: 1rem;
+      }
+      .left {
+        margin-right: 1rem;
+      }
+    }
+    .left {
+      display: flex;
+      gap: 1rem;
+      span {
+        background-color: $dark-grey;
+        display: inline-block;
+        padding: 0.5rem;
+        border-radius: 5px;
+        transition: $transition;
+        &:hover {
+          background-color: $green;
+        }
+        svg {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

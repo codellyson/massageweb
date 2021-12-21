@@ -1,0 +1,341 @@
+.brief-section {
+  text-align: center;
+  padding: 3.5rem 0;
+  line-height: 1.5;
+  font-family: $font-family;
+  font-weight: $font-weight-300;
+  .card {
+    border: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .card-title {
+      font-size: $medium-font-size;
+    }
+  }
+}
+.wrapper {
+  padding: 3rem 0;
+  h1 {
+    font-family: $font-family;
+    font-size: $medium-font-size;
+    padding: 1rem;
+  }
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .card {
+      transition: $transition;
+      &:hover {
+        box-shadow: -1px 17px 21px -5px rgba(168, 163, 163, 0.75);
+        -webkit-box-shadow: -1px 17px 21px -5px rgba(168, 163, 163, 0.75);
+        -moz-box-shadow: -1px 17px 21px -5px rgba(168, 163, 163, 0.75);
+      }
+      .card-title {
+      }
+      .card-footer {
+        font-size: $small-font-size;
+      }
+    }
+    @media (min-width: 78rem) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+.contact-brief {
+  .card {
+    border: none;
+  }
+  .card-title {
+    text-align: center;
+    font-weight: $font-weight-400;
+    font-size: $small-font-size;
+  }
+}
+
+.contact-section {
+  padding: 2rem 0;
+  display: grid;
+  @media (min-width: 78rem) {
+    grid-template-columns: 300px auto;
+  }
+  input,
+  textarea {
+    background-color: rgba(99, 115, 129, 0.06);
+    border-color: rgba(99, 115, 129, 0.06);
+    border-width: 1px 1px 1px 1px;
+    border-radius: 0px 0px 0px 0px;
+    width: 100%;
+  }
+  font-family: $font-family;
+  .contact-form {
+    .top {
+      .forms-1,
+      .forms-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin-bottom: 1rem;
+        input {
+          padding: 10px 16px;
+          font-size: 0.95rem;
+          &:focus-within {
+            border-color: rgba(99, 115, 129, 0.06);
+          }
+        }
+      }
+    }
+    .bottom {
+      margin: 1rem 0;
+    }
+  }
+  .contact-details {
+    color: $dark-grey;
+    padding: 1.5rem 0;
+    @media (min-width: 78rem) {
+      padding: 0 0;
+    }
+    h1 {
+      font-size: $medium-font-size;
+      padding-bottom: 1rem;
+      color: $dark;
+    }
+    .contact-option {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+.founder-profile {
+  padding: 1.5rem 0.9375rem;
+  @media (min-width: 78rem) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+
+  .card {
+    border: none;
+    padding: 0;
+    position: relative;
+    font-weight: $font-weight-300;
+    p {
+      padding: 1rem 0;
+    }
+    @media (min-width: 78rem) {
+      font-size: $x-small-font-size;
+    }
+    .card-title {
+      position: absolute;
+      bottom: 10%;
+      color: $white;
+      width: 100%;
+      h5,
+      h6 {
+        padding: 0.65rem;
+        background: rgba(0, 0, 0, 0.466);
+        text-transform: uppercase;
+        font-size: $x-small-font-size;
+        @media (min-width: 78rem) {
+          font-size: $medium-font-size;
+        }
+      }
+    }
+  }
+}
+
+.service-confirmation {
+  padding: 1.5rem 0.9375rem;
+
+  .card {
+    padding: 0;
+    .card-contents {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: justify;
+      font-weight: $font-weight-300;
+      p {
+        line-height: 1.5;
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+  @media (min-width: 78rem) {
+    padding: 2rem 0;
+    .card {
+      .card-contents {
+        font-size: $x-small-font-size;
+      }
+    }
+  }
+}
+.massage-options {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    @media (min-width: 78rem) {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      padding: 2rem;
+    }
+  }
+  h1 {
+    font-size: $medium-font-size;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  .card {
+    padding: 1rem;
+    border-color: $dark;
+    font-weight: $font-weight-300;
+    .card-title,
+    .card-contents {
+      text-align: center;
+      h3 {
+        font-weight: $font-weight-400;
+      }
+    }
+    .card-title {
+      text-transform: uppercase;
+    }
+  }
+}
+.package-section {
+  background: url(../public/images/1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 2rem 0;
+  margin-top: 2.5rem;
+  &::before {
+    height: 100%;
+    width: 100%;
+    content: "";
+    background: rgba(0, 0, 0, 0.623);
+    position: absolute;
+    top: 0;
+  }
+
+  .container {
+    position: relative;
+    color: $white;
+    @media (min-width: 78rem) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .card {
+      background: transparent;
+      border: none;
+      font-weight: $font-weight-300;
+      padding: 0.9rem;
+      @media (min-width: 78rem) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      h1 {
+        font-size: $medium-font-size;
+        @media (min-width: 78rem) {
+          font-size: $large-font-size;
+        }
+      }
+    }
+  }
+}
+
+.reflection-section {
+  background: url("../public/images/3.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  padding: 3rem 0;
+  &::before {
+    height: 100%;
+    width: 100%;
+    content: "";
+    background: rgba(0, 0, 0, 0.623);
+    position: absolute;
+    top: 0;
+  }
+
+  .container {
+    padding: 2rem 0.9375rem;
+    .card {
+      background: transparent;
+      border: none;
+      padding: 0;
+      color: $white;
+      position: relative;
+      .card-title {
+        @media (min-width: 78rem) {
+          font-size: $large-font-size;
+        }
+      }
+      .card-contents {
+        p,
+        ul {
+          font-weight: $font-weight-300;
+          line-height: 2;
+        }
+      }
+    }
+  }
+}
+.slider-section {
+  padding: 3rem 0;
+  font-family: $font-family;
+  color: $green;
+  h1 {
+    text-align: center;
+    @media (min-width: 78rem) {
+      font-size: $large-font-size;
+      font-weight: $font-weight-300;
+    }
+  }
+  .swiper {
+    width: 100%;
+    @media (min-width: 78rem) {
+      width: 60%;
+    }
+    .card {
+      border: none;
+      text-align: center;
+      padding: 2rem;
+      font-weight: $font-weight-300;
+    }
+  }
+}
+
+._abt {
+  .card {
+    .card-title {
+      color: $green;
+      @media (min-width: 78rem) {
+        font-size: $large-font-size;
+        font-weight: $font-weight-400;
+      }
+    }
+  }
+}

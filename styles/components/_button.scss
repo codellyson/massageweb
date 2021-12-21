@@ -1,0 +1,32 @@
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  border: solid 2px transparent;
+
+  &.primary {
+    background: $white;
+    text-decoration: none;
+    &:hover {
+      background: $dark-grey;
+      border: solid 2px $white;
+      color: $white;
+    }
+  }
+  &.secondary {
+    background: $blue;
+    color: $white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    &:hover {
+      background: $green;
+      border: solid 2px $white;
+      color: $white;
+    }
+  }
+}
