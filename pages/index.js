@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import Button from "../components/Button";
 import Card from "../components/Card";
 import Hero from "../components/Hero";
@@ -8,6 +9,73 @@ import Splits from "../components/Splits";
 import GlassImage from "../public/images/2.webp";
 
 export default function Home() {
+  const testimonials = [
+    {
+      quote:
+        "A1 massage therapy & body mechanic is a “Great place on all fronts. Friendly front desk staff - they engage so well. Good massage therapists that listen to the client and modify massage to meet the client's needs. Great place with great prices.",
+      by: "Brent",
+    },
+
+    {
+      quote:
+        "I've visited A1 massage therapy & body mechanic several times and was so impressed with the staff, service, and massage quality that I purchased a membership!",
+      by: "Darrell",
+    },
+
+    {
+      quote:
+        "I recommend A1 massage therapy & body mechanic to everyone. Was so amazing and relaxing. Will definitely be back again.",
+      by: "Ruby",
+    },
+
+    {
+      quote:
+        "Just had a therapeutic Cupping massage at A1 massage therapy & body mechanic. Nothing short of amazing! She identified some trouble areas and demonstrated some stretches to prolong the benefits between my massages. The front desk gal was very knowledgeable and helped me select the right membership program for me. Nothing short of spectacular experience! Thank you!",
+      by: "Christina",
+    },
+
+    {
+      quote:
+        "Love it here the people and atmosphere! At A1 massage therapy & body mechanic, They always take care of my family and I and we always leave relaxed! ",
+      by: "Tandi",
+    },
+
+    {
+      quote:
+        "Really enjoyed this place, at A1 massage therapy & body mechanic, we did a couples massage for sisters. I've have always gotten massages all over the state's, and while visiting other countries and I'd say this was up there at top of list of U.S. spas. It's kind of typical spa place but much talent went into the massages.",
+      by: "Denice",
+    },
+
+    {
+      quote:
+        "I’ve had a couple of massages here from various therapists at  A1 massage therapy & body mechanic. I gotta say, I love every single one of them but Janet is the best I swear.",
+      by: "Jose",
+    },
+
+    {
+      quote:
+        "Everyone here at A1 massage therapy & body mechanic is awesome! Make sure you give these guys a try especially Janet. She's amazing. Thank you for the awesome service",
+      by: "Sara",
+    },
+
+    {
+      quote:
+        "Amazing Relaxing Experience. I just wanted to give a HUGE thumbs up to Janet at A1 massage therapy & body mechanic. I had the most amazing massage and facial. The staff at A1 massage therapy & body mechanic is very friendly and professional. Best services I have ever received is from Janet.",
+      by: "Sara",
+    },
+
+    {
+      quote:
+        "I have never had a massage before and getting one from A1 massage therapy & body mechanic far exceeded my expectations! The therapist was great! The rooms were nice, and it was all a very relaxing experience.",
+      by: "Bryson",
+    },
+
+    {
+      quote:
+        "Janet is the best at A1 massage therapy & body mechanic! She knows what she’s doing and is consistent, with good manners! Book an appointment with her!",
+      by: "Valerie",
+    },
+  ];
   return (
     <>
       <Head>
@@ -16,27 +84,29 @@ export default function Home() {
       </Head>
 
       <Hero>
-        <h3>Massage That ... </h3>
-        <h1 className="hero-heading"> HEALS | RESTORES | ENERGIZES</h1>
+        <h3>Welcome...</h3>
+        <h1 className="hero-heading"> A1 massage Therapy & body mechanic</h1>
         <Button type={"primary"}>Book Your Massage</Button>
       </Hero>
       <section className="container">
         <div className="brief-section">
           <Card>
             <h1 className="card-title">
-              Why Yulli Therapeutic Healing Center?
+              Why A1 massage Therapy & body mechanic is unique from others
             </h1>
 
             <p className="card-contents">
-              This is a different type of massage experience. At Yulli
-              Therapeutic Healing Center you’ll never have the same treatment
-              twice. That’s because our therapists customize each session to
-              what your body needs at that specific moment in time. Step into
-              our calming studio and leave the rest to us.
+              We offer different type of massage experience. At A1 massage
+              Therapy & body mechanic, you’ll never have the same treatment
+              twice. That’s because our therapists & masseuse customize each
+              session to what your body needs at that specific moment in time.
+              Come on to our palace and leave the rest to us.
             </p>
 
             <div className="card-footer">
-              <Button type={"secondary rounded"}>Our Services</Button>
+              <Link href={"/services"}>
+                <a className={" btn secondary rounded"}>Our Services</a>
+              </Link>
             </div>
           </Card>
         </div>
@@ -60,80 +130,20 @@ export default function Home() {
       </section>
       <section className="container">
         <div className="wrapper">
-          <h1 className="text-center">What Our Client Say</h1>
+          <h1 className="text-center">
+            Hear From Guests Like You Read Our Reviews
+          </h1>
           <div className="testimonials">
-            <Card type="default">
-              <div className="card-contents">
-                <p>
-                  I have been visiting Yulli's practice for 2 years. In addition
-                  to having an experienced and talented massage therapist, treat
-                  yourself to the healing energy shared by dedicated and sincere
-                  therapists. Be sure to purchase the multi visit package,
-                  you'll want to return again!
-                </p>
-              </div>
-              <div className="card-footer">
-                <p>Karen Ford</p>
-              </div>
-            </Card>
-            <Card type="default">
-              <div className="card-contents">
-                <p>
-                  Excellent, special, a real treat! Yuli has a healing touch,
-                  plus my back pain feels sooo much better and her spa creates a
-                  beautiful and peaceful environment. Highly recommend.
-                </p>
-              </div>
-              <div className="card-footer">
-                <p>Vivi Pierce</p>
-              </div>
-            </Card>
-            <Card type="default">
-              <div className="card-contents">
-                <p>
-                  I have been visiting Yulli's practice for 2 years. In addition
-                  to having an experienced and talented massage therapist, treat
-                  yourself to the healing energy shared by dedicated and sincere
-                  therapists. Be sure to purchase the multi visit package,
-                  you'll want to return again!
-                </p>
-              </div>
-              <div className="card-footer">
-                <p>Karen Ford</p>
-              </div>
-            </Card>
-            <Card type="default">
-              <div className="card-contents">
-                <p>
-                  I've known Yulli for years - but I finally took the plunge to
-                  try out massage therapy after a 20+ year hiatus. With a lot of
-                  scars and damage to my body from a car accident, I frankly
-                  wasn't comfortable with it but decided to do it - and I have
-                  ZERO regrets. It was amazing. I'm now a client and plan to
-                  incorporate this therapy into my self-care routine.
-                </p>
-              </div>
-              <div className="card-footer">
-                <p>George Sampson</p>
-              </div>
-            </Card>
-            <Card type="default">
-              <div className="card-contents">
-                <p>
-                  I had a phenomenal experience at Yulli Therapeutic Healing
-                  Center! For the first time, I tried reiki followed by a
-                  massage. I did not know what to expect with reiki, but I am
-                  now a believer. I felt the energy moving in my body which gave
-                  me total relaxation. Once I started my massage, I literally
-                  felt as if I had been transported to another place. That’s how
-                  relaxing this was for me. Afterwards, my mind body and spirit
-                  felt in sync.
-                </p>
-              </div>
-              <div className="card-footer">
-                <p>R. Shaun Gause</p>
-              </div>
-            </Card>
+            {testimonials.map(({ quote, by }, key) => (
+              <Card type="default" key={key}>
+                <div className="card-contents">
+                  <p>{`"${quote}"`}</p>
+                </div>
+                <div className="card-footer">
+                  <p>{by}</p>
+                </div>
+              </Card>
+            ))}
           </div>
         </div>
       </section>

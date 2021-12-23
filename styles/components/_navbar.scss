@@ -7,9 +7,11 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
+
     .nav-brand {
-      span {
-        border-radius: 50%;
+      width: 140px;
+      @media (min-width: 78rem) {
+        width: auto;
       }
     }
     @media (min-width: 78rem) {
@@ -44,10 +46,13 @@ nav {
         li {
           a {
             text-decoration: none;
-            color: $dark-grey;
+            color: $green;
             font-size: $x-small-font-size;
             font-weight: $font-weight-400;
             &:hover {
+              color: $blue;
+            }
+            &.current {
               color: $blue;
             }
           }

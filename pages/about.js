@@ -1,30 +1,84 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import Button from "../components/Button";
 import Card from "../components/Card";
 import Hero from "../components/Hero";
-import Swiper, { Navigation, Pagination } from "swiper";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
 import Head from "next/head";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 function about() {
-  Swiper.use([Navigation, Pagination]);
-  const swiper = new Swiper(".swiper", {
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
+  const testimonials = [
+    {
+      quote:
+        "A1 massage therapy & body mechanic is a “Great place on all fronts. Friendly front desk staff - they engage so well. Good massage therapists that listen to the client and modify massage to meet the client's needs. Great place with great prices.",
+      by: "Brent",
     },
-    // Navigation arrows
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+
+    {
+      quote:
+        "I've visited A1 massage therapy & body mechanic several times and was so impressed with the staff, service, and massage quality that I purchased a membership!",
+      by: "Darrell",
     },
-  });
+
+    {
+      quote:
+        "I recommend A1 massage therapy & body mechanic to everyone. Was so amazing and relaxing. Will definitely be back again.",
+      by: "Ruby",
+    },
+
+    {
+      quote:
+        "Just had a therapeutic Cupping massage at A1 massage therapy & body mechanic. Nothing short of amazing! She identified some trouble areas and demonstrated some stretches to prolong the benefits between my massages. The front desk gal was very knowledgeable and helped me select the right membership program for me. Nothing short of spectacular experience! Thank you!",
+      by: "Christina",
+    },
+
+    {
+      quote:
+        "Love it here the people and atmosphere! At A1 massage therapy & body mechanic, They always take care of my family and I and we always leave relaxed! ",
+      by: "Tandi",
+    },
+
+    {
+      quote:
+        "Really enjoyed this place, at A1 massage therapy & body mechanic, we did a couples massage for sisters. I've have always gotten massages all over the state's, and while visiting other countries and I'd say this was up there at top of list of U.S. spas. It's kind of typical spa place but much talent went into the massages.",
+      by: "Denice",
+    },
+
+    {
+      quote:
+        "I’ve had a couple of massages here from various therapists at  A1 massage therapy & body mechanic. I gotta say, I love every single one of them but Janet is the best I swear.",
+      by: "Jose",
+    },
+
+    {
+      quote:
+        "Everyone here at A1 massage therapy & body mechanic is awesome! Make sure you give these guys a try especially Janet. She's amazing. Thank you for the awesome service",
+      by: "Sara",
+    },
+
+    {
+      quote:
+        "Amazing Relaxing Experience. I just wanted to give a HUGE thumbs up to Janet at A1 massage therapy & body mechanic. I had the most amazing massage and facial. The staff at A1 massage therapy & body mechanic is very friendly and professional. Best services I have ever received is from Janet.",
+      by: "Sara",
+    },
+
+    {
+      quote:
+        "I have never had a massage before and getting one from A1 massage therapy & body mechanic far exceeded my expectations! The therapist was great! The rooms were nice, and it was all a very relaxing experience.",
+      by: "Bryson",
+    },
+
+    {
+      quote:
+        "Janet is the best at A1 massage therapy & body mechanic! She knows what she’s doing and is consistent, with good manners! Book an appointment with her!",
+      by: "Valerie",
+    },
+  ];
 
   return (
     <div>
       <Head>
-        <title>About</title>
+        <title>About Us</title>
         <meta property="og:title" content="About" key="title" />
       </Head>
       <Hero>
@@ -33,19 +87,29 @@ function about() {
       <section className="container">
         <div className="brief-section _abt">
           <Card>
-            <h1 className="card-title">Feel alive, from the inside-out.</h1>
+            <h1 className="card-title">
+              Feel the paradise, from the inside & outside
+            </h1>
 
-            <p className="card-contents">
-              At Yulli Therapeutic Healing Center, we see massage as more than a
-              luxury. It’s a necessity. Patients often walk into our studio
-              after a bad day. Maybe their energy feels off, they’re overwhelmed
-              or in pain. The one thing they can trust is that when they come to
-              us they’ll be taken care of. To us, massage is about healing—inner
-              and outer healing. That’s why we customize each session to what
-              you need. Due to our extensive training and experience, our
-              therapists utilize various modalities to help you feel alive, at
-              peace, energized, and relaxed
-            </p>
+            <div className="card-contents">
+              <p>
+                At A1 massage therapy & body mechanic, massage is more than a
+                luxury. It’s a necessity.
+              </p>
+              <p>
+                Walk into our studio after a bad day. Maybe your energy feels
+                off, overwhelmed or in pain. The one thing you can trust is that
+                when you come to us you'll be taken care of. <br /> To us,
+                massage is about healing, restore, relax—inner and outer
+                healing.
+              </p>
+              <p>
+                That’s why we customize each session to what you need. Due to
+                our extensive training and experience, our therapists & masseuse
+                utilize various technics to help you feel alive, at peace,
+                energized, and relaxed.
+              </p>
+            </div>
 
             <div className="card-footer">
               <Button type={"secondary rounded"}>Our Services</Button>
@@ -57,30 +121,28 @@ function about() {
       <section className="reflection-section">
         <div className="container">
           <Card>
-            <h1 className="card-title">GIVING BACK</h1>
+            <h1 className="card-title">A1 Massage Therapy and Body Mechanic</h1>
 
             <div className="card-contents">
               <p>
-                One of the core values of Yulli Therapeutic Healing Center is
-                service to others. Growing up modestly in a small village in
-                Peru, Yully experienced firsthand what it feels like to not have
-                the little things you dream of. Filled with gratitude for her
-                career, community, and colleagues, she now gives back a portion
-                of proceeds every year to help children in need. Through your
-                patronage, you have helped to provide:
-              </p>
-
+                We offer different type of massage experience. At A1 massage
+                Therapy & body mechanic, you’ll never have the same treatment
+                twice. That’s because our therapists & masseuse customize each
+                session to what your body needs at that specific moment in time.
+                Come on to our palace and leave the rest to us.
+              </p>{" "}
+              <br />
+              <h3>Benefits of Massage </h3>
               <ul>
+                <li> Increases blood circulation</li>
                 <li>
-                  {" "}
-                  Christmas gifts for children in Piura, Peru, Yully’s hometown.
-                </li>
-                <li>
-                  {" "}
                   Chair massages to individuals struggling with Lyme disease.
                 </li>
-                <li> Groceries for individuals in crisis at Second Story. </li>
-                <li> Clothing for clients of The Women’s Center.</li>
+                <li>Helps eliminate toxins Breaks down muscular adhesion . </li>
+                <li> Assists in the healing of soft-tissue injuries.</li>
+                <li>Helps reduce muscular and nerve pain</li>
+                <li> Increases joint mobilization </li>
+                <li>Promotes relaxation and stress relief</li>
               </ul>
             </div>
           </Card>
@@ -90,54 +152,27 @@ function about() {
       <section className="slider-section">
         <h1>The Client Experience </h1>
         {/* <!-- Slider main container --> */}
-        <div className="swiper container">
-          {/* <!-- Additional required wrapper --> */}
-          <div className="swiper-wrapper">
-            {/* <!-- Slides --> */}
-            <div className="swiper-slide">
-              <Card>
-                <div className="card-contents">
-                  <p>
-                    I’ve had massages for close to 40 years and this place
-                    absolutely tops them all. Excellent, massage therapists who
-                    are all experienced in a wide range of techniques to soothe
-                    your aches and pains.
-                  </p>
-                </div>
-              </Card>
-            </div>
-            <div className="swiper-slide">
-              <Card>
-                <div className="card-contents">
-                  <p>
-                    This is the best massage I’ve ever had. The therapist was
-                    truly amazing and as soon as I told her I’m a runner and
-                    have an office job she knew exactly what to do.
-                  </p>
-                </div>
-              </Card>
-            </div>
 
-            <div className="swiper-slide">
-              {" "}
-              <Card>
+        <Carousel showArrows={true} showIndicators="true" autoPlay={true}>
+          {testimonials.map(({ quote, by }, key) => (
+            // eslint-disable-next-line react/jsx-key
+            <div className="swiper-slide" key={key}>
+              <Card type="default">
                 <div className="card-contents">
-                  <p>
-                    Four months post right shoulder tendon repair surgery I hit
-                    a plateau in range of motion and Yulli helped me get past
-                    that in the first session. It was incredible!”
-                  </p>
+                  <p>{`"${quote}"`}</p>
+                  <h4>&mdash;{by}</h4>
                 </div>
               </Card>
             </div>
-          </div>
-          {/* <!-- If we need pagination --> */}
-          <div className="swiper-pagination"></div>
+          ))}
+        </Carousel>
 
-          {/* <!-- If we need navigation buttons --> */}
-          <div className="swiper-button-prev"></div>
-          <div className="swiper-button-next"></div>
-        </div>
+        <section className="container">
+          <p className="text-center">
+            New to us? From FAQs to special promotions, learn everything you
+            need to know before stepping into our studio.
+          </p>
+        </section>
       </section>
     </div>
   );

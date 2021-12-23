@@ -10,6 +10,7 @@ import {
 } from "react-icons/fa";
 import Button from "./Button";
 import Card from "./Card";
+import SnapTop from "./SnapTop";
 function Footer() {
   return (
     <footer className="footer">
@@ -23,7 +24,7 @@ function Footer() {
                   <span>
                     <FaPhone />
                   </span>
-                  <span>(571) 888-5193</span>
+                  <span>(740) 312-7322</span>
                 </a>
               </li>
               <li className="footer-menu-item">
@@ -31,7 +32,7 @@ function Footer() {
                   <span>
                     <FaEnvelope />
                   </span>
-                  <span>info@unknowndomain.com</span>
+                  <span>info@a1massagetherapy.com</span>
                 </a>
               </li>
               <li className="footer-menu-item">
@@ -40,7 +41,9 @@ function Footer() {
                   <span>
                     <FaMapMarkerAlt />
                   </span>
-                  <span>No.2 Unknown Location at some places</span>
+                  <span>
+                    North carolina zip code 27025 Kiuwan, United States
+                  </span>
                 </a>
               </li>
               <li className="footer-menu-item">
@@ -105,6 +108,7 @@ function Footer() {
           </span>
         </p>
       </div>
+      <SnapTop />
     </footer>
   );
 }

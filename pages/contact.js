@@ -20,7 +20,7 @@ function contact() {
             <h3 className="card-title">
               If you’d like to book an appointment you may do so online. If you
               have scheduling or service questions, please contact us by phone
-              at (571) 888-5193.
+              at (740) 312-7322.
             </h3>
           </Card>
         </div>
@@ -38,13 +38,13 @@ function contact() {
               <span>
                 <FaEnvelope />{" "}
               </span>{" "}
-              <span>info@yullitherapeutic.com</span>
+              <span>info@a1massagetherapy.com</span>
             </p>
             <p className="contact-option">
               <span>
                 <FaPhone />
               </span>
-              <span>(571) 888-5193 Facebook-f</span>
+              <span>(740) 312-7322 </span>
             </p>
           </aside>
           <aside className="contact-form">
@@ -72,16 +72,16 @@ function contact() {
           </aside>
         </div>
       </section>
-      {/* <section className="container">
+      <section>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207378.7231205795!2d-79.96511109922291!3d36.37678535084296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8852f061b62670b1%3A0xeb04650125fcf87b!2sMadison%2C%20NC%2027025%2C%20USA!5e0!3m2!1sen!2sng!4v1640075706223!5m2!1sen!2sng"
           width="600"
-          height="450"
+          height="550"
           style={{ border: "0" }}
           allowFullScreen={true}
           loading="lazy"
         ></iframe>
-      </section> */}
+      </section>
     </div>
   );
 }
