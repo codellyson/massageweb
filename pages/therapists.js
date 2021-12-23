@@ -51,6 +51,24 @@ function therapists() {
       image: require("/public/images/gl4.jpg"),
     },
     {
+      bio: "Michael specializes in Deep Tissue, Cannabliss Massage, Aromatherapy, and Hot Stone Massage",
+      brief:
+        "Massage therapy was the perfect choice. I also found that the flow of the movements were very relaxing to me. I still enjoy my gym time. I also compete in fitness competitions",
+      image: require("/public/images/gl11.jpeg"),
+    },
+    {
+      bio: "James specializes in Deep Tissue, Table Thai, Craniosacral therapy, CBD massage, and prenatal.",
+      brief:
+        "In any spare time I get, I like to ride motorcycles with my friends, and play with my dog",
+      image: require("/public/images/gl12.jpeg"),
+    },
+    {
+      bio: "Donald is proficient in assisted stretch, myofascial release, IASTM, structural bodywork and KT taping",
+      brief:
+        " I have been in the massage industry going on 7 years and I love learning new techniques and applications. I have a need to help and fix people. Bring me your most chronic issue and let’s work together to resolve it",
+      image: require("/public/images/gl13.jpeg"),
+    },
+    {
       bio: "Lisa specialties include kinesiology, musculoskeletal therapy (deep tissue), hot/cold stones, myofascial release, active fascial stretching, sports medicine, medical massage, cranial-sacral, neuromuscular rehabilitation, and simple but powerful hands on faith-based prayer.",
       brief:
         "My hobbies include waking up early and talking to my dogs, studying, lots of studying, hiking, calisthenics, and cooking.",
@@ -81,6 +99,15 @@ function therapists() {
       </Hero>
 
       <section className="container">
+        <Card type="therapist-brief">
+          <div className="card-contents">
+            <p>
+              At A1 massage therapy & body mechanic, we have over one thousand
+              registered therapists across USA, but these are the list of
+              verified therapist/masseuse
+            </p>
+          </div>
+        </Card>
         <div className="therapists">
           {therapist.map(({ image, bio, brief }, key) => (
             <Card type="default">

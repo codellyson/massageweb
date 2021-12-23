@@ -96,9 +96,7 @@ function Footer() {
         </div>
       </div>
       <div className="footer-footer-content">
-        <p className="right">
-          © Copyright Yulli Therapeutic Massage | Powered by Limitless Media LLC
-        </p>
+        <p className="right">© Copyright A1 Massage Therapy & Body Mechanic</p>
         <p className="left">
           <span>
             <FaFacebook />

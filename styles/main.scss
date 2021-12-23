@@ -11,6 +11,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: none;
     .card-title {
       font-size: $medium-font-size;
       color: $green;
@@ -52,6 +53,7 @@
 .contact-brief {
   .card {
     border: none;
+    box-shadow: none;
   }
   .card-title {
     text-align: center;
@@ -133,6 +135,7 @@
     padding: 0;
     position: relative;
     font-weight: $font-weight-300;
+    box-shadow: none;
     p {
       padding: 1rem 0;
     }
@@ -144,6 +147,7 @@
       bottom: 10%;
       color: $white;
       width: 100%;
+
       h5,
       h6 {
         padding: 0.65rem;
@@ -252,12 +256,10 @@
       border: none;
       font-weight: $font-weight-300;
       padding: 0.9rem;
-      @media (min-width: 40rem) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-      }
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
       h1 {
         font-size: $medium-font-size;
@@ -293,6 +295,7 @@
       padding: 0;
       color: $white;
       position: relative;
+      box-shadow: none;
       .card-title {
         @media (min-width: 40rem) {
           font-size: $large-font-size;
@@ -319,17 +322,16 @@
       font-weight: $font-weight-300;
     }
   }
+
   .swiper-slide {
     width: 100%;
-    @media (min-width: 40rem) {
-      width: 60%;
-    }
     .card {
       border: none;
       text-align: center;
       padding: 2rem;
       font-weight: $font-weight-300;
       color: $dark;
+      box-shadow: none;
     }
   }
 }
@@ -392,9 +394,21 @@ iframe {
     font-weight: $font-weight-300;
     padding: 1rem 0;
   }
+
   @media (min-width: 40rem) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+  }
+}
+article.therapist-brief {
+  border: none;
+  text-align: center;
+  width: auto;
+  box-shadow: none;
+
+  @media (min-width: 40rem) {
+    width: 100%;
+    font-size: 19.2px;
   }
 }
