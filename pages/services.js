@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import Card from "../components/Card";
 import Hero from "../components/Hero";
@@ -7,7 +8,7 @@ import Split2Image from "../public/images/4.webp";
 import { FaArrowRight } from "react-icons/fa";
 import Image from "next/image";
 import Button from "../components/Button";
-import founderImage from "../public/images/5.webp";
+import founderImage from "../public/images/gl14.jpeg";
 import Head from "next/head";
 import Link from "next/link";
 function services() {
@@ -76,11 +77,11 @@ function services() {
       </Hero>
 
       <section className="container founder-profile">
-        <Card>
+        <Card data-aos="fade-up">
           <Image src={founderImage} alt="Founder Image" />
           <div className="card-title">
             <h5>About the owner</h5>
-            <h6>Janet Doe</h6>
+            <h6>Tim Sweeney</h6>
           </div>
         </Card>
         <Card>
@@ -96,23 +97,23 @@ function services() {
           </h2>
           <div className="card-contents">
             <p>
-              *BHC policy on contagious diseases or infections: for the health
-              and safety of the BHC community, staff, and clients we do not
-              accept clients in acute state of contagion. contagious diseases
-              include: chicken pox, measles, mumps, tuberculosis, meningitis,
-              whooping cough, SARS, Avian or similar type of influenza but not
-              common seasonal flu, MRSA. BHC may chose to broaden this
-              definition within its best interest and in accordance with
-              information received through the Centers for Disease Control and
-              Prevention (CDC) it is policy to protect our BHC community staff
-              and clients from any contagious and infectious diseases.
+              Tim Sweeney is cofounder and CEO of Cary, North Carolina game
+              developer Epic Games. The private company is the maker of
+              Fortnite, one of the world's most popular games, with over 400
+              million players. Epic generated $5.1 billion in revenue in 2020
+              and raised $1 billion in an April 2021 funding round that valued
+              the company at $28.7 billion. He's a lover of massage and because
+              of the love he has for massage, he decided to establish a massage
+              company in North Carolina in 2010 and the company has grown very
+              strong within the state. The company has 4 branches across United
+              State.
             </p>
           </div>
         </Card>
       </section>
 
       <section className="container service-confirmation">
-        <Splits image={Split2Image} type={"reverse"}>
+        <Splits image={Split2Image} type={"reverse"} data-aos="fade-up">
           <Card>
             <div className="card-contents">
               <p>
@@ -145,7 +146,7 @@ function services() {
         <h1>List of services includes</h1>
         <div className="container">
           {massageService.map(({ title, content }, key) => (
-            <Card key={key}>
+            <Card key={key} data-aos="fade-up">
               <div className="image-container">
                 <Image src={SplitImage} alt="pic one" />
               </div>
@@ -160,7 +161,7 @@ function services() {
 
       <section className="package-section">
         <div className="container">
-          <Card>
+          <Card data-aos="zoom-in">
             <h1>Package Specials</h1>
             <div className="card-contents">
               <p>Four 60-minute sessions: $395 ($85 savings)</p>

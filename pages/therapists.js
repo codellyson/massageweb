@@ -110,7 +110,7 @@ function therapists() {
         </Card>
         <div className="therapists">
           {therapist.map(({ image, bio, brief }, key) => (
-            <Card type="default">
+            <Card type="default" data-aos="fade-up" key={key}>
               <div className="therapist-image">
                 <Image
                   layout="responsive"

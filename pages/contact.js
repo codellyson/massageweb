@@ -1,6 +1,7 @@
 import Head from "next/head";
 import React from "react";
 import { FaEnvelope, FaPhone } from "react-icons/fa";
+import Button from "../components/Button";
 import Card from "../components/Card";
 import Hero from "../components/Hero";
 
@@ -68,6 +69,9 @@ function contact() {
             </div>
             <div className="bottom">
               <textarea name="" id="" cols="30" rows="10"></textarea>
+              <div>
+                <Button type={"primary"}>SUBMIT MESSAGE</Button>
+              </div>
             </div>
           </aside>
         </div>

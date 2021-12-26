@@ -1,8 +1,14 @@
+import { useEffect } from "react";
+import Aos from "aos";
 import Head from "next/head";
 import Footer from "../components/Footer";
+import "aos/dist/aos.css";
 import "../styles/globals.scss";
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <>
       <Head>

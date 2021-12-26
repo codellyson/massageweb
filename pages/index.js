@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import React from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
@@ -84,9 +85,12 @@ export default function Home() {
       </Head>
 
       <Hero>
+        {" "}
         <h3>Welcome...</h3>
         <h1 className="hero-heading"> A1 massage Therapy & body mechanic</h1>
-        <Button type={"primary"}>Book Your Massage</Button>
+        <Link href="/contact">
+          <a className={"btn primary"}>Book Your Massage</a>
+        </Link>
       </Hero>
       <section className="container">
         <div className="brief-section">
@@ -105,7 +109,9 @@ export default function Home() {
 
             <div className="card-footer">
               <Link href={"/services"}>
-                <a className={" btn secondary rounded"}>Our Services</a>
+                <a className={" btn secondary rounded"} data-aos="fade-up">
+                  Our Services
+                </a>
               </Link>
             </div>
           </Card>
@@ -114,16 +120,19 @@ export default function Home() {
       <section className="container">
         <Splits image={GlassImage}>
           <Card type="default">
-            <h1 className="card-title">For Optimal Results</h1>
+            <h1 className="card-title">Important Notice</h1>
 
             <p className="card-contents">
-              We frequently receive referrals from our trusted network of
-              chiropractors, physical therapists, trainers, and gyms. If you’ve
-              experienced an injury or body limitation, therapeutic massage can
-              enhance the results you’ve witnessed from working with these
-              health and medical professionals. Our therapists incorporate their
-              knowledge of human anatomy into bodywork services, helping you
-              speed up your journey to recovery.
+              BHC policy on contagious diseases or infections: for the health
+              and safety of the BHC community, staff, and clients we do not
+              accept clients in acute state of contagion. contagious diseases
+              include: chicken pox, measles, mumps, tuberculosis, meningitis,
+              whooping cough, SARS, Avian or similar type of influenza but not
+              common seasonal flu, MRSA. BHC may chose to broaden this
+              definition within its best interest and in accordance with
+              information received through the Centers for Disease Control and
+              Prevention (CDC) it is policy to protect our BHC community staff
+              and clients from any contagious and infectious diseases.
             </p>
           </Card>
         </Splits>
@@ -135,14 +144,17 @@ export default function Home() {
           </h1>
           <div className="testimonials">
             {testimonials.map(({ quote, by }, key) => (
-              <Card type="default" key={key}>
-                <div className="card-contents">
-                  <p>{`"${quote}"`}</p>
-                </div>
-                <div className="card-footer">
-                  <p>{by}</p>
-                </div>
-              </Card>
+              // eslint-disable-next-line react/jsx-key
+              <div data-aos="fade-up" key={key}>
+                <Card type="default">
+                  <div className="card-contents">
+                    <p>{`"${quote}"`}</p>
+                  </div>
+                  <div className="card-footer">
+                    <p>{by}</p>
+                  </div>
+                </Card>
+              </div>
             ))}
           </div>
         </div>
